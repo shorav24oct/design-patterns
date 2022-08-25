@@ -1,4 +1,4 @@
-package com.singleton;
+package com.singleton.pattern;
 
 public class VoiceRecognizer {
 
