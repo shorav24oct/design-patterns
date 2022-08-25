@@ -7,7 +7,7 @@ public class VoiceRecognizer {
 	private VoiceRecognizer() {
 	}
 
-	public VoiceRecognizer getInstance() {
+	public static VoiceRecognizer getInstance() {
 		return instance;
 	}
 
