@@ -1,4 +1,4 @@
-package com.singleton.pattern;
+package com.sp.eagerinstantiation.pattern;
 
 public class VoiceRecognizer {
 
@@ -9,6 +9,10 @@ public class VoiceRecognizer {
 
 	public static VoiceRecognizer getInstance() {
 		return instance;
+	}
+	
+	public void recognize() {
+		System.out.println("Recognizer : " + instance.hashCode() + " is working");
 	}
 
 }

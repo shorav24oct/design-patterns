@@ -1,9 +1,9 @@
-package com.singleton.test;
+package com.sp.test;
 
-import com.singleton.beans.Caller;
-import com.singleton.beans.Messenger;
+import com.sp.beans.Caller;
+import com.sp.beans.Messenger;
 
-public class EagerInstantiationTest {
+public class SingletonTest {
 
 	public static void main(String[] args) {
 		Messenger messenger = new Messenger();

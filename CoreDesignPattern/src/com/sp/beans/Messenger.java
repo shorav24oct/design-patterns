@@ -1,12 +1,12 @@
-package com.singleton.beans;
+package com.sp.beans;
 
-import com.singleton.pattern.VoiceRecognizer;
+import com.sp.staticinstantiation.pattern.VoiceRecognizer;
 
 public class Messenger {
 	
 	public void readMessage() {
 		VoiceRecognizer voiceRecognizer = VoiceRecognizer.getInstance();
-		System.out.println(voiceRecognizer.hashCode());
+		voiceRecognizer.recognize();
 	}
 
 }
