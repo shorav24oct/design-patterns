@@ -1,16 +1,19 @@
 package com.sp.test;
 
-import com.sp.beans.Caller;
-import com.sp.beans.Messenger;
+import com.sp.runnable.Caller;
+import com.sp.runnable.Messenger;
 
 public class SingletonTest {
 
 	public static void main(String[] args) {
 		Messenger messenger = new Messenger();
-		messenger.readMessage();
-		
 		Caller caller = new Caller();
-		caller.listen();
+
+		Thread thread1 = new Thread(messenger);
+		Thread thread2 = new Thread(caller);
+
+		thread1.start();
+		thread2.start();
 	}
 
 }
