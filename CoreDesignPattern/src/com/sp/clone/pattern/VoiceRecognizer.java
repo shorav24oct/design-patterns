@@ -1,6 +1,6 @@
 package com.sp.clone.pattern;
 
-public class VoiceRecognizer implements Cloneable {
+public class VoiceRecognizer  implements Cloneable{
 	private static VoiceRecognizer instance;
 
 	private VoiceRecognizer() {
@@ -25,5 +25,6 @@ public class VoiceRecognizer implements Cloneable {
 	@Override
 	public Object clone() throws CloneNotSupportedException {
 		throw new CloneNotSupportedException();
+		//return super.clone();
 	}
 }
