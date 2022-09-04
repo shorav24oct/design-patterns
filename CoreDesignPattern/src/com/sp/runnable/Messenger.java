@@ -1,6 +1,6 @@
 package com.sp.runnable;
 
-import com.sp.synchronizationlazyinstantiation.pattern.VoiceRecognizer;
+import com.sp.doublecheck.pattern.VoiceRecognizer;
 
 public class Messenger implements Runnable {
 
