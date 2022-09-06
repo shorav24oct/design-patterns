@@ -4,7 +4,9 @@ import com.sp.beans.Caller;
 import com.sp.beans.Messenger;
 
 public class SingletonTest {
-
+	
+	static int i;
+	
 	public static void main(String[] args) {
 		Messenger messenger = new Messenger();
 		Caller caller = new Caller();
@@ -13,6 +15,7 @@ public class SingletonTest {
 		caller.listen();
 
 		
+		System.out.println(i);
 	}
 
 }
