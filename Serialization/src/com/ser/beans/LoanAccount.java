@@ -4,8 +4,17 @@ import java.io.Serializable;
 
 public class LoanAccount extends Account implements Serializable {
 
-	private static final long serialVersionUID = 6281484746068480944L;
+	
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -4475591819838407764L;
+	
+	public LoanAccount() {
+		System.out.println("LoanAccount.LoanAccount()");
+	}
+	
 	private String loanType;
 	private int tenure;
 

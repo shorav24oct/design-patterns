@@ -21,7 +21,7 @@ public class SerializationTest {
 		account.setAccountType("savings");
 		account.setAddress("hyd");
 
-		//serialize(account, file);
+		serialize(account, file);
 		System.out.println(deSerialize(file));
 	}
 

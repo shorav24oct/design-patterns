@@ -1,7 +1,8 @@
 package com.ser.beans;
 
-public class Account {
 
+public class Account {
+	
 	private int accountNo;
 	private String name;
 	private String accountType;
