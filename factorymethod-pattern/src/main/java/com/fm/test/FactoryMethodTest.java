@@ -1,14 +1,18 @@
 package com.fm.test;
 
-import com.fm.beans.Pizza;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import com.fm.store.HyderabadPizzaStore;
 
 public class FactoryMethodTest {
 
+	private static Logger logger = LoggerFactory.getLogger(FactoryMethodTest.class);
+
 	public static void main(String[] args) {
+		logger.info("FactoryMethodTest.main()");
 		HyderabadPizzaStore hyderabadPizzaStore = new HyderabadPizzaStore();
-		Pizza pizza = hyderabadPizzaStore.orderPizza("chicken");
-		System.out.println(pizza.getClass().getName());
+		hyderabadPizzaStore.orderPizza("chicken");
 	}
 
 }
